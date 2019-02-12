@@ -7,7 +7,8 @@
         <%= song.artist_name %>
         -
         <%= song.title %>
-      <%= link_to @post.category.name, category_path(@post.category) if @post.category %>
+        
+      <%= link_to song.category.name, artist_path(song.category) if song.category %>
       </a>
     </li>
   <% end %>
