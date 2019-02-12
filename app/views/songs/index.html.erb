@@ -5,10 +5,9 @@
       <a href="<%= song_path(song) %>">
         
         <%= song.artist_name %>
-        <%= link_to song.artist.name, artist_path(song.artist) if song.artist %>
         -
         <%= song.title %>
-        
+      
       </a>
     </li>
   <% end %>
