@@ -8,7 +8,7 @@
         -
         <%= song.title %>
         
-      <%= link_to song.artist.name, artist_path(song.artist) if song.artist %>
+      <%= link_to song.artist.name, artist_path(song.artist.id) if song.artist %>
       </a>
     </li>
   <% end %>
